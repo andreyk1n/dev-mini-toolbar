@@ -1,0 +1,38 @@
+
+.dev-toolbar {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  z-index: 999999;
+  font-family: system-ui, sans-serif;
+}
+
+.dev-toolbar button {
+  all: unset;
+  cursor: pointer;
+  background: rgba(0,0,0,.75);
+  color: #fff;
+  font-size: 12px;
+  padding: 6px 7px;
+  margin: 3px;
+  border-radius: 6px;
+  border: 1px solid rgba(255,255,255,.6);
+  opacity: .85;
+  transition: opacity .15s, transform .15s, background .15s;
+}
+
+.dev-toolbar button:hover {
+  opacity: 1;
+  background: rgba(0,0,0,.9);
+  transform: scale(1.06);
+}
+
+.main-buttons,
+.extra-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.extra-buttons.hidden {
+  display: none;
+}
